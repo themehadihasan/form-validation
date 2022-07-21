@@ -94,11 +94,6 @@ p {
 @media screen and (max-width: 760px) {
     .background {
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .background {
-        justify-content: center;
+        padding-right: 0;
     }
 }
