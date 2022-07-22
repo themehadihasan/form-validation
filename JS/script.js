@@ -18,6 +18,9 @@ function isFormValid() {
     } else if(contactNumber.value.length < 10) {
         document.getElementById("findError").innerHTML = "'Contact Number' is not less than 10 characters";
         flag = 0;
+    } else if(isNaN(contactNumber.value)) {
+        document.getElementById("findError").innerHTML = "'Contact Number' is required only numeric value";
+        flag = 0;
     } else {
         document.getElementById("findError").innerHTML = "";
         flag = 1;
